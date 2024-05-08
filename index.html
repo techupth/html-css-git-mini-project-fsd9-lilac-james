@@ -4,9 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Agencio.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navyblue: {
+                500: "#0B0757",
+                400: "#1F1E61",
+                300: "#1374F6",
+                200: "#8480AE",
+                100: "#64a7ff",
+                50: "rgba(244, 247, 252, 1)",
+              },
+              sunyellow: "#FDD76E",
+            },
+          },
+        },
+      };
+    </script>
   </head>
+
   <body>
-    <!-- Start Coding here -->
+    <div class="bg-white w-[100%] h-[100vh]">
+      <header class="h-[1200px] flex flex-col gap-16">
+        <nav
+          class="h-[75px] mt-5 flex flex-row justify-evenly items-center sticky top-0 bg-navyblue-50 z-50"
+        >
+          <div class="Logo flex flex-row gap-6">
+            <div class="Logo-img">
+              <div class="relative">
+                <img src="image/Polygon 1.png" alt="Logo image" />
+                <div class="absolute left-3 bottom-0">
+                  <img src="image/Polygon 2.png" alt="Logo image" />
+                </div>
+              </div>
+            </div>
+            <h1 class="text-navyblue-500 text-4xl font-medium">Agencio</h1>
+          </div>
+          <div class="dropdownmenu">
+            <button class="p-2">
+              <img src="/image/Vector.png" />
+            </button>
+          </div>
+          <div class="header-menu text-base">
+            <ul class="list-none text-navyblue-400 flex flex-row gap-5">
+              <li>Home</li>
+              <li>Category</li>
+              <li>Service</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+            <button
+              class="text-navyblue-500 rounded-md bg-sunyellow w-[160px] h-[60px]"
+            >
+              Create Account
+            </button>
+          </div>
+        </nav>
+
+        <div class="header-section flex justify-evenly">
+          <div class="header-text flex flex-col gap-6 relative top-10 h-auto">
+            <p class="text-xl text-navyblue-300">
+              CREATIVE AGENCY
+              <span class="underline">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </span>
+            </p>
+
+            <p class="text-5xl text-navyblue-500">
+              We are here to give the best service
+            </p>
+
+            <p class="text-lg text-navyblue-200 text-wrap">
+              It's crafted with the latest trend of design & coded with all
+              modern approaches. It's a robust & multi-dimensional usable
+              template.
+            </p>
+
+            <div class="flex flex-row gap-5 items-center">
+              <button
+                class="w-[160px] h-[60px] rounded-md bg-navyblue-300 hover:bg-navyblue-100"
+              >
+                Get Started
+              </button>
+              <button class="flex flex-row gap-2">
+                <img src="image/play-button.png" /> Watch Video
+              </button>
+            </div>
+          </div>
+          <img
+            src="/image/header-pic.png"
+            alt="Business man"
+            class="header-pic w-[609px]"
+          />
+        </div>
+      </header>
+    </div>
   </body>
 </html>
