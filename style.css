@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Rubik";
+  src: url(fonts/Rubik-Regular.woff);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  background: linear-gradient(
+    183.5deg,
+    rgba(244, 247, 252, 1) 80%,
+    rgba(255, 255, 255, 0.01) 80%
+  );
+}
+
+.dropdownmenu {
+  visibility: hidden;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-text {
+  width: 36rem;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-pic {
+    width: 80%;
+    height: auto;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+
+  .dropdownmenu {
+    visibility: visible;
+  }
+
+  .header-text {
+    width: 90%;
+  }
+}
